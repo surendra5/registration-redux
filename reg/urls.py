@@ -4,10 +4,11 @@ from django.contrib.auth import views as auth_views
 #from reg.forms import UserForm
 from reg.views import register, account_activation_sent, activate
 from reg.views import *
-
+from material.frontend import urls as frontend_urls
 from . import views
 
 urlpatterns = [
+    url(r'', include(frontend_urls)),
     #url(r'', views.home, name='home'),
     url(r'^accounts/register/$',views.register, name='register'),
     url(r'^accounts/', include('registration.backends.default.urls')),

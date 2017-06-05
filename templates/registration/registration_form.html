@@ -1,12 +1,22 @@
-{% extends "base.html" %}
-{% load i18n %}
+{% extends "registration/registration_base.html" %}
 
 {% block content %}
-<form method="post" action=".">
-  {% csrf_token %}
-              {{ user_form.as_p }}
-            {{ profile_form.as_p }}
-  <input type="submit" value="{% trans 'Submit' %}" />
-</form>
+
+    {% load material_form %}
+    <div class="container">
+        <div class="row">
+            <div class="col s6 offset-s3 form-area">
+                <div class="form-head"><h4>Register</h4></div>
+                    <form method="POST" action=".">
+                        {% csrf_token %}
+                        {% form form=user_form %}{% endform %}
+                    {% form form=profile_form %}{% endform %}
+
+ <button type="submit" name="_submit" class="btn">Submit</button>
+                    </form>
+
+                </div>
+
 {% endblock %}
+
 
