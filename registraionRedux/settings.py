@@ -122,8 +122,8 @@ STATIC_URL = '/static/'
 #SEND_ACTIVATION_EMAIL = True
 
 #EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_HOST_USER = 'surendrameena5@gmail.com'
-#EMAIL_HOST_PASSWORD = os.environ.get('anushka.buria05')
+#EMAIL_HOST_USER = 'email'
+#EMAIL_HOST_PASSWORD = os.environ.get('password')
 #EMAIL_USE_TLS = True
 
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

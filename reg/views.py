@@ -8,7 +8,6 @@ from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-
 from reg.forms import UserForm, UserProfileForm
 from reg.tokens import account_activation_token
 
