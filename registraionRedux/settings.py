@@ -112,7 +112,7 @@ STATIC_URL = '/static/'
 
 #ACCOUNT_ACTIVATION_DAYS = 7  # One-week activation window; you may, of course, use a different value.
 #REGISTRATION_AUTO_LOGIN = True  # Automatically log the user in.
-#REGISTRATION_EMAIL_SUBJECT_PREFIX = '[Django Registration Test App]'
+#REGISTRATION_EMAIL_SUBJECT_PREFIX = '[Django Registration]'
 #SEND_ACTIVATION_EMAIL = True
 
 #EMAIL_HOST = 'smtp.gmail.com'
