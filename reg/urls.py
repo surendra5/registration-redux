@@ -9,7 +9,7 @@ from . import views
 
 urlpatterns = [
     url(r'', include(frontend_urls)),
-    #url(r'', views.home, name='home'),
+    url(r'^$', views.home, name='home'),
     url(r'^accounts/register/$',views.register, name='register'),
     url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^registration/', include('registration.auth_urls')),

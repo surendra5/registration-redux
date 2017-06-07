@@ -2,7 +2,7 @@
     {% block content %}
       {% if user.is_authenticated %}
           <p> Welcome {{ user.username }}</p>
-          
+          <a href="{% url 'logout' %}">logout</a>
       {% else %}
           <p>Welcome Frog</p>
           <a href="{% url 'login' %}">login</a> / <a href="{% url 'register' %}">signup</a>
