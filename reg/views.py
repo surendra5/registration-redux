@@ -34,7 +34,7 @@ def register(request):
             profile.save()
 
             current_site = get_current_site(request)
-            subject = 'activate you site account'
+            subject = 'activate your account'
             message = render_to_string('registration/account_activation_email.html', {
                 'user': user,
                 'domain': current_site.domain,
