@@ -1,4 +1,4 @@
-# registration-redux
+# django registration-redux
 Django custom registration-redux with
 aditional profile through one-to-one relation,
 email activation and reset password through email,
